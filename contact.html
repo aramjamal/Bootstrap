@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Save The Planet</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+    <!-- Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-success ">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="40%"></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="help.html">How to help</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+
+<!-- End of Navbar -->
+
+  
+<!-- /*****************MAP**************/-->
+
+    
+       
+          <div class="container">
+           <div class="box">
+               <div class="row">
+                   <div class="col-lg-12" id="the_head">
+                       <hr>
+                       <center><h1 class="intro-text-center">Contact
+                       <strong>Green Earth</strong></h1></center>
+                       <hr>
+                   </div>
+                   
+                   <!-- map -->
+                   <div id="mapid" style="width: 600px; height: 400px;"></div>
+<script>
+
+  var mymap = L.map('mapid').setView([48.003472, 37.800959], 14);
+
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    id: 'mapbox.streets'
+  }).addTo(mymap);
+
+  L.marker([48.003472, 37.800959]).addTo(mymap)
+    .bindPopup("<b>Green Earth</b>").openPopup();
+
+  var popup = L.popup();
+
+</script>
+
+
+                   <!-- end map -->
+                   
+                   <div class="col-md-4">
+                       <p>Phone:
+                       <strong>+(08)050-562-13-34</strong></p>
+                       
+                       <p>Email:
+                       <strong><a href="mailto:donetsk.miss.you@gmail.com">donetsk.miss.you@gmail.com</a></strong></p>
+                       
+                       <p>Address:
+                       <strong>blv. Pushkina 231
+                       <br>Donetsk, Ukraine, 86130</strong></p>
+                   </div>
+                   
+                   
+               </div>
+           </div>
+       </div>
+       
+       
+<!--       **************************MAP ENDS************************-->
+       
+       
+<!--       **************FORMS*************-->
+       <hr>
+       <div class="box_form container">
+           <div class="row">
+               <div class="col-lg-12">
+                   <center><h2 class="intro-text-center">Contact
+                       <strong>form</strong></h2></center>
+                       <hr>
+                       <p class="text-message">We have lots of answers to frequently asked questions, but if you don’t find what you’re looking for, please fill out the form and send us a message</p>
+                       <form class="form">
+                           <div class="row">
+                               <div class="form-group col-lg-4">
+                                  <label>Name</label>
+                                  <input type="text" class="form-control">
+                               </div>
+                               
+                               <div class="form-group col-lg-4">
+                                  <label>Email</label>
+                                  <input type="email" class="form-control">
+                           </div>
+                           
+                           
+                           <div class="form-group col-lg-12">
+                                  <label>Message</label>
+                               <textarea class="form-control" rows="6"></textarea>
+                           </div>
+                           
+                           <div class="form-group col-lg-12">
+                                 <input type="hidden" name="save" value="contact">
+                                  <button type="submit" class="btn btn-success">Submit</button>
+                           </div>
+                           </div>
+                           
+                           
+                       </form>
+               </div>
+           </div>
+       </div>
+
+        <footer class="site-footer bg-success style-none">
+        
+<div class="container">
+       <div class="row">
+       
+    </div>
+       <div class="bottom-footer">
+       
+       <div class="footer-social-icons">
+       <p class="text-white">Follow us on </p>     
+        <ul class="footer-nav list-inline">
+            <li class="list-inline-item"><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+        </div>
+    </div>
+       <div class="footer-bottom">
+           <p class="text-white">&copy;<time datetime="2017">2017</time> Green Earth</p>
+        </div>
+       </div>   
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="contactform/contactform.js"></script>
+    
+  </body>
+</html>
